@@ -1,0 +1,39 @@
+Nayara Almeida
+Projeto Filmes
+
+
+Rotas
+GET "/" apresentação geral da api, com a quantidade de filmes no database.
+
+Title: String
+Roterista: String
+Genre: String
+CriadoEm: Number
+
+
+GET "/:id"
+Requirido um params retorna um filme de acordo com o id
+
+DELETE "/:id"
+Requirido um params deleta um filme de acordo com o id retorna um objeto com o status da operacao
+
+PATCH "/:id"
+Requirido: Body Atualiza uma ou mais propriedades requisitadas pelo Body retorna um objeto especificando quantas propriedades foram alteradas
+
+POST
+requirido um Body
+
+{
+
+"Nome": "O lado bom da Vida",
+
+"Roterista": 'Diretor',
+
+"Genre": ["Drama"],
+
+"CriadoEm": "Data do Cadastro",
+
+}
+
+retorna o filme que foi criado
+
